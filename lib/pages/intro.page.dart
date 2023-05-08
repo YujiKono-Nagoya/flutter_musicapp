@@ -32,7 +32,6 @@ class _IntroPageState extends State<IntroPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.grey[800],
-        selectedFontSize: 20,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[600],
         items: [

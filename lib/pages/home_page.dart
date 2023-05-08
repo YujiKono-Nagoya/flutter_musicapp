@@ -23,14 +23,24 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[800],
+      backgroundColor: Colors.grey[850],
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 90),
+            SizedBox(height: 50),
             Container(
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0xFF212121), //色
+                    spreadRadius: 0,
+                    blurRadius: 0,
+                    offset: Offset(1, 5),
+                  ),
+                ],
+                color: Colors.grey[800],
+              ),
               height: 60,
-              color: Colors.grey[850],
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

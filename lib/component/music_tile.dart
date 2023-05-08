@@ -17,14 +17,17 @@ class MusicTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        margin: EdgeInsets.only(left: 25),
+        margin: EdgeInsets.only(left: 10),
         height: 600,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
-              music.imagepath,
-              height: 160,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                music.imagepath,
+                height: 160,
+              ),
             ),
             SizedBox(
               height: 4,
@@ -41,7 +44,7 @@ class MusicTile extends StatelessWidget {
                 Text(
                   music.authors,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.grey,
                   ),
                 ),
               ],

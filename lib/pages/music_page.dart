@@ -58,6 +58,7 @@ class _MusicPageState extends State<MusicPage> {
                   ),
                 ),
               ),
+
               Image.asset(
                 widget.music.imagepath,
                 height: 330,
@@ -133,7 +134,7 @@ class _MusicPageState extends State<MusicPage> {
                     GestureDetector(
                       onTap: toggglePlayPause,
                       child: Icon(
-                        isPlaying ? Icons.pause : Icons.play_circle,
+                        isPlaying ? Icons.pause_circle : Icons.play_circle,
                         size: 80,
                         color: Colors.white,
                       ),
